@@ -2,16 +2,16 @@
 
 ## What goes in priv?
 
-Priv should have 2 files:
+Priv should have:
 
 * chef\_key.pem
 
 These are pem-formatted private key files corresponding to your chef key and the ssh private key for provisioning new servers.
 
-## How to deploy plm\_website
+## How to deploy the wedding website
 
 ```
-cd plm-website/production/rackspace_public_cloud
+cd wedding_website/digital_ocean/prod
 cp terraform.tfvars.sample terraform.tfvars ; $EDITOR terraform.tfvars # optional
 terraform plan
 terraform apply
